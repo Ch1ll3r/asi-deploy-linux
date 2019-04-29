@@ -8,7 +8,7 @@
       password: Asi.2019
       validate_certs: no
       folder: /ha-datacenter/vm/
-      name: linuxvm
+      name: "{{ vmname }}"
       state: poweredon
       guest_id: centos64Guest
       disk:
