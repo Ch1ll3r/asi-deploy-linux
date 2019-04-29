@@ -29,6 +29,6 @@
         - 10.41.0.10
       cdrom:
         type: iso
-        iso_path: "[datastore1] ISO/centos.iso"
+        iso_path: "[datastore1] ISO/centos-ks.iso"
     delegate_to: localhost
     register: deploy_vm
