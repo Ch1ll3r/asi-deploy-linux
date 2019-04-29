@@ -3,7 +3,7 @@
   tasks:
   - name: Create a virtual machine on given ESXi hostname
     vmware_guest:
-      hostname: 10.41.0.100
+      hostname: 10.41.0.12
       username: root
       password: Asi.2019
       validate_certs: no
@@ -14,7 +14,7 @@
       disk:
       - size_gb: 30
         type: thin
-        datastore: datastore1
+        datastore: CHMUDSV001
       hardware:
         memory_mb: 4096
         num_cpus: 4
@@ -29,6 +29,6 @@
         - 10.41.0.10
       cdrom:
         type: iso
-        iso_path: "[datastore1] ISO/centos-ks.iso"
+        iso_path: "[CHMUDSV001] ISO/centos-ks.iso"
     delegate_to: localhost
     register: deploy_vm
