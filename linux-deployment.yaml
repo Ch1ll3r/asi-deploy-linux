@@ -14,7 +14,7 @@
       disk:
       - size_gb: 30
         type: thin
-        datastore: CHMUDSV001
+        datastore: datastore1
       hardware:
         memory_mb: 4096
         num_cpus: 4
